@@ -1,0 +1,9 @@
+-- ============================================
+-- PERHATIAN: File ini sudah TIDAK DIGUNAKAN
+-- ============================================
+-- Semua tabel (termasuk licenses dan license_logs)
+-- sudah digabungkan ke dalam SUPABASE_SCHEMA.sql
+--
+-- Cukup jalankan SUPABASE_SCHEMA.sql saja di Supabase.
+-- Jangan jalankan file ini.
+-- ============================================

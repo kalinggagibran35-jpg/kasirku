@@ -1,0 +1,53 @@
+{
+  "name": "KasirKu - Aplikasi Kasir Profesional",
+  "short_name": "KasirKu",
+  "description": "Aplikasi kasir profesional untuk jual beli dan penyewaan",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#7a1c3c",
+  "theme_color": "#ab1f49",
+  "orientation": "any",
+  "categories": ["business", "shopping"],
+  "lang": "id",
+  "icons": [
+    {
+      "src": "/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    },
+    {
+      "src": "/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/icon-maskable.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Kasir / POS",
+      "short_name": "Kasir",
+      "url": "/#/pos",
+      "icons": [{"src": "/icon.svg", "sizes": "any"}]
+    },
+    {
+      "name": "Produk",
+      "short_name": "Produk",
+      "url": "/#/products",
+      "icons": [{"src": "/icon.svg", "sizes": "any"}]
+    }
+  ]
+}

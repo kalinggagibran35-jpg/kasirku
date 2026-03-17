@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html><body>
+<p>Generating icons from SVG...</p>
+<canvas id="c"></canvas>
+<script>
+// This is a helper - in production, pre-generate these
+const sizes = [192, 512];
+const img = new Image();
+img.onload = () => {
+  sizes.forEach(s => {
+    const c = document.getElementById('c');
+    c.width = s; c.height = s;
+    const ctx = c.getContext('2d');
+    ctx.drawImage(img, 0, 0, s, s);
+    const link = document.createElement('a');
+    link.download = `icon-${s}.png`;
+    link.href = c.toDataURL('image/png');
+    link.click();
+  });
+};
+img.src = '/icon.svg';
+</script>
+</body></html>
