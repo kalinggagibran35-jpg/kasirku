@@ -451,7 +451,7 @@ export function resetStoreSettings(): StoreSettings {
  * This resets ALL data and creates a new admin account
  */
 export async function emergencyFactoryReset(secretKey: string, newAdminName: string, newAdminUsername: string, newAdminPassword: string): Promise<boolean> {
-  const EMERGENCY_KEY = 'GANTI_KUNCI_DARURAT_ANDA_DISINI';
+  const EMERGENCY_KEY = 'selayar1';
   if (secretKey !== EMERGENCY_KEY) return false;
 
   // Clear all data
@@ -487,7 +487,7 @@ export async function emergencyFactoryReset(secretKey: string, newAdminName: str
  * Reset password for a specific user by admin/owner using the emergency key
  */
 export async function emergencyResetPassword(secretKey: string, username: string, newPassword: string): Promise<boolean> {
-  const EMERGENCY_KEY = 'GANTI_KUNCI_DARURAT_ANDA_DISINI';
+  const EMERGENCY_KEY = 'Selayar1';
   if (secretKey !== EMERGENCY_KEY) return false;
 
   const users = getUsers();
